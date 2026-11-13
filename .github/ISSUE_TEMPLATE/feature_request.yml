@@ -1,0 +1,17 @@
+name: 功能建议
+description: 为 kg 的项目提出新想法
+title: "[建议]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的建议！请描述一下你的想法。
+  - type: textarea
+    id: feature
+    attributes:
+      label: 你希望增加什么功能？
+      description: 描述一下你的想法和使用场景。
+      placeholder: 例如：希望 KgChat 能支持发送图片...
+    validations:
+      required: true
