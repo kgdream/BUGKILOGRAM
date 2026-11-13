@@ -1,0 +1,47 @@
+name: 提交 Bug
+description: 报告 kg 软件或网页的缺陷
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量详细填写，方便我定位问题。
+
+  - type: input
+    id: version
+    attributes:
+      label: 软件/网页名称及版本
+      description: 你遇到问题的是哪个产品？版本是多少？（如：KgChat v1.0）
+      placeholder: 例如：KgChat v1.0.2 / kgdream.github.io
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么问题？
+      description: 简要描述你遇到的问题。
+      placeholder: 请描述你看到的错误提示或异常情况...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 一步一步怎么操作才能遇到这个 Bug？
+      placeholder: |
+        1. 打开...
+        2. 点击...
+        3. 出现报错...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 截图或日志（可选）
+      description: 可以在这里直接拖拽粘贴图片，或者贴报错日志。
+    validations:
+      required: false
